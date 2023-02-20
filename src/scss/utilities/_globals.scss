@@ -13,11 +13,11 @@
     --color-dark: #222;
     --color-dark-200:#333;
     --color-dark-300:#444;
-    --color-dark-500:#555;
-    --color-dark-600:#666;
-    --color-dark-700:#b5b5b5;
-    --color-dark-800:#d5d5d5;
-    --color-dark-900:#f1f1f1;
+    --color-dark-400:#555;
+    --color-dark-500:#666;
+    --color-dark-600:#777;
+    --color-dark-700:#888;
+    --color-dark-800:#999;
 
     --color-accent: #60bfbf; // hsl(180, 43%, 56%)
     --color-accent-200: hsl(180, 43%, 60%);
@@ -45,7 +45,7 @@
     --line-height: 1.5;
 
     --font-scale: 1.25;
-    --font-size: 1.5rem;
+    --font-size: 1.5rem; // 24px
 
     --font-size-1: var(--font-size);
     --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
