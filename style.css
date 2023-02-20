@@ -7,42 +7,44 @@
   --gap-s: 1rem;
   --border-radius: 0px;
   --color-dark: #222;
-  --color-dark-200:#444;
-  --color-dark-300:#666;
-  --color-dark-500:#888;
-  --color-dark-600:#999;
-  --color-dark-700:#b5b5b5;
-  --color-dark-800:#d5d5d5;
-  --color-dark-900:#f1f1f1;
-  --color-accent: #009fbb;
-  --color-accent-200: #009fbb;
-  --color-accent-300: #009fbb;
-  --color-accent-400: #009fbb;
-  --color-accent-500: #009fbb;
-  --color-accent-600: #009fbb;
-  --color-accent-700: #009fbb;
-  --color-accent-800: #009fbb;
-  --color-accent-900: #009fbb;
-  --color-light: #efead8;
-  --color-light-200: #efead8;
-  --color-light-300: #efead8;
-  --color-light-400: #efead8;
-  --color-light-500: #efead8;
-  --color-light-600: #efead8;
-  --color-light-700: #efead8;
-  --color-light-800: #efead8;
-  --color-light-900: #efead8;
-  --font-sans: "Arial", sans-serif;
-  --font-serif: "Georgia", serif;
+  --color-dark-200:#333;
+  --color-dark-300:#444;
+  --color-dark-400:#555;
+  --color-dark-500:#666;
+  --color-dark-600:#777;
+  --color-dark-700:#888;
+  --color-dark-800:#999;
+  --color-accent: #60bfbf;
+  --color-accent-200: hsl(180, 43%, 60%);
+  --color-accent-300: hsl(180, 43%, 65%);
+  --color-accent-400: hsl(180, 43%, 70%);
+  --color-accent-500: hsl(180, 43%, 75%);
+  --color-accent-600: hsl(180, 43%, 80%);
+  --color-accent-700: hsl(180, 43%, 85%);
+  --color-accent-800: hsl(180, 43%, 90%);
+  --color-accent-900: hsl(180, 43%, 95%);
+  --color-light: #f2f2f2;
+  --color-light-200: hsl(0, 0%, 90%);
+  --color-light-300: hsl(0, 0%, 85%);
+  --color-light-400: hsl(0, 0%, 80%);
+  --color-light-500: hsl(0, 0%, 75%);
+  --color-light-600: hsl(0, 0%, 70%);
+  --color-light-700: hsl(0, 0%, 65%);
+  --color-light-800: hsl(0, 0%, 60%);
+  --color-light-900: hsl(0, 0%, 55%);
+  --font-sans: "futura-pt", sans-serif;
+  --font-serif: "ff-meta-serif-web-pro", serif;
   --line-height: 1.5;
   --font-scale: 1.25;
-  --font-size: 1rem;
+  --font-size: 1.5rem;
   --font-size-1: var(--font-size);
   --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
   --font-size-3: calc( var(--font-size-2) * var(--font-scale) );
   --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
   --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
   --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+  --page-width: 102rem;
+  --grid-container: [full-start] minmax(2rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(2rem, 1fr) [full-end];
 }
 
 * {
@@ -60,10 +62,31 @@ img {
 
 body {
   font-family: var(--font-sans);
+  font-size: var(--font-size-1);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
+}
+
+h2 {
+  font-size: var(--font-size-5);
+}
+
+h3 {
+  font-size: var(--font-size-4);
+}
+
+h4 {
+  font-size: var(--font-size-3);
+}
+
+h5 {
+  font-size: var(--font-size-2);
+}
+
+h6 {
+  font-size: var(--font-size-1);
 }
 
 p {
@@ -82,20 +105,29 @@ li {
   line-height: var(--line-height);
 }
 
-.test {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  padding: 1rem 2rem;
-  border: 0;
-  border-radius: 2rem;
-  font-size: 1rem;
-  font-weight: 700;
-  display: inline-block;
-  text-decoration: none;
+.site-header,
+.site-hero,
+.site-about,
+.site-work,
+.site-contact,
+.site-footer {
+  display: grid;
+  grid-template-columns: var(--grid-container);
 }
-.test:hover {
-  background-color: var(--color-accent);
-  color: var(--color-light);
+.site-header__inner,
+.site-hero__inner,
+.site-about__inner,
+.site-work__inner,
+.site-contact__inner,
+.site-footer__inner {
+  grid-column: inner;
+}
+
+.site-hero,
+.site-about,
+.site-work,
+.site-contact {
+  min-height: 100vh;
 }
 
 .hero {

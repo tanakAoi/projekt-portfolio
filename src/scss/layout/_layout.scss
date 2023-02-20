@@ -1,0 +1,20 @@
+.site-header,
+.site-hero,
+.site-about,
+.site-work,
+.site-contact,
+.site-footer {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__inner {
+        grid-column: inner;
+    }
+}
+
+.site-hero,
+.site-about,
+.site-work,
+.site-contact {
+    min-height: 100vh; // temp
+}
