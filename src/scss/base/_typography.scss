@@ -42,12 +42,18 @@ p {
 a {
     color: var(--color-dark);
     text-decoration: none;
+
     &:hover {
-        color: var(--color-accent);
+        
     }
 
 }
 
+ul {
+    list-style: none;
+}
+
 li {
     line-height: var(--line-height);
+    font-weight: 500;
 }

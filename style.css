@@ -97,12 +97,13 @@ a {
   color: var(--color-dark);
   text-decoration: none;
 }
-a:hover {
-  color: var(--color-accent);
+ul {
+  list-style: none;
 }
 
 li {
   line-height: var(--line-height);
+  font-weight: 500;
 }
 
 .site-header,
@@ -128,6 +129,25 @@ li {
 .site-work,
 .site-contact {
   min-height: 100vh;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xl);
 }
 
 .hero {
