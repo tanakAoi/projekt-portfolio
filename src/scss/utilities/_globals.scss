@@ -3,10 +3,10 @@
     --section-gap: 8rem;
     --section-gap-inner: calc( var(--section-gap) * 0.75 );
 
-    --gap-xl: 4rem;
-    --gap-l: 3rem;
-    --gap-m: 2rem;
-    --gap-s: 1rem;
+    --gap-xl: 5rem;
+    --gap-l: 4rem;
+    --gap-m: 3rem;
+    --gap-s: 2rem;
 
     --border-radius: 0px;
 
@@ -55,5 +55,5 @@
     --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
 
     --page-width: 102rem;
-    --grid-container: [full-start] minmax(2rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(2rem, 1fr) [full-end];
+    --grid-container: [full-start] minmax(3rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(3rem, 1fr) [full-end];
 }
