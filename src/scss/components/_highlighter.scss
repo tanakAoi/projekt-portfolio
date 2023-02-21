@@ -1,14 +1,19 @@
-@mixin default() {
+@mixin default(
+    $height: 1rem,
+    $width: 100%,
+    $bottom: 0.5rem,
+    $right: -1rem
+    ) {
 
     &::after {
         content: '';
         display: block;
         background-color: var(--color-accent);
-        height: 1rem;
-        width: 100%;
+        height: $height;
+        width: $width;
         position: absolute;
-        bottom: 0.5rem;
-        left: 1rem;
+        bottom: $bottom;
+        right: $right;
         z-index: -99;
         opacity: 0.6;
     }
