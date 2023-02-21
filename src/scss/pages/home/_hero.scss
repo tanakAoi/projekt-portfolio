@@ -1,3 +1,31 @@
-.hero {
-    background-color: black;
+@use '../../components/highlighter';
+
+.site-hero {
+    min-height: 100vh;
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 8rem;
+        line-height: 1.7;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        &--highlightened {
+            @include highlighter.default(
+                $height: 3.5rem,
+                $width: 60%,
+                $bottom: 2rem,
+                $right: -2rem); 
+        }
+        
+    }
+
 }

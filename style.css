@@ -1,10 +1,10 @@
 :root {
   --section-gap: 8rem;
   --section-gap-inner: calc( var(--section-gap) * 0.75 );
-  --gap-xl: 4rem;
-  --gap-l: 3rem;
-  --gap-m: 2rem;
-  --gap-s: 1rem;
+  --gap-xl: 5rem;
+  --gap-l: 4rem;
+  --gap-m: 3rem;
+  --gap-s: 2rem;
   --border-radius: 0px;
   --color-dark: #222;
   --color-dark-200:#333;
@@ -44,7 +44,7 @@
   --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
   --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
   --page-width: 102rem;
-  --grid-container: [full-start] minmax(2rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(2rem, 1fr) [full-end];
+  --grid-container: [full-start] minmax(3rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(3rem, 1fr) [full-end];
 }
 
 * {
@@ -63,6 +63,7 @@ img {
 body {
   font-family: var(--font-sans);
   font-size: var(--font-size-1);
+  color: var(--color-dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,6 +97,7 @@ p {
 a {
   color: var(--color-dark);
   text-decoration: none;
+  line-height: 0;
 }
 ul {
   list-style: none;
@@ -104,6 +106,10 @@ ul {
 li {
   line-height: var(--line-height);
   font-weight: 500;
+}
+
+body {
+  background-color: var(--color-light);
 }
 
 .site-header,
@@ -133,10 +139,11 @@ li {
 
 .site-header {
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: var(--color-light);
+  background-color: transparent;
   color: var(--color-dark);
 }
 .site-header__inner {
@@ -145,13 +152,41 @@ li {
   justify-content: space-between;
 }
 .site-header__menu {
+  padding: 0;
   display: flex;
   align-items: center;
-  gap: var(--gap-xl);
+  justify-content: center;
+  gap: var(--gap-l);
 }
 
-.hero {
-  background-color: black;
+.site-hero {
+  min-height: 100vh;
+  width: 100%;
+}
+.site-hero__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-hero__text {
+  font-size: 8rem;
+  line-height: 1.7;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.site-hero__text--highlightened::after {
+  content: "";
+  display: block;
+  background-color: var(--color-accent);
+  height: 3.5rem;
+  width: 60%;
+  position: absolute;
+  bottom: 2rem;
+  right: -2rem;
+  z-index: -99;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */
