@@ -1,0 +1,16 @@
+@mixin default() {
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: var(--color-accent);
+        height: 1rem;
+        width: 100%;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1rem;
+        z-index: -99;
+        opacity: 0.6;
+    }
+
+}
