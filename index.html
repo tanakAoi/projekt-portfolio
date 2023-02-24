@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aoi Tanaka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://use.typekit.net/wcv0wto.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/work.js" defer></script>
 </head>
 <body>
       <div class="container">
@@ -118,6 +121,32 @@
         <!-- Work -->
         <section id="work" class="site-work">
             <div class="site-work__inner">
+                <h2 class="site-work__title">Previous work</h2>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href=""><img src="assets/images/work1.png" alt="Travel World"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="assets/images/work2.png" alt="Beartours"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="assets/images/work3.png" alt="Bearlissimo"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="assets/images/work4.png" alt="Rose Apothecary"></a>
+                    </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
 
             </div>
         </section>
