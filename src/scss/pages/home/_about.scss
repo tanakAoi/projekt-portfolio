@@ -1,0 +1,100 @@
+@use '../../components/buttons' as button;
+@use '../../components/highlighter';
+
+.site-about {
+    padding-top: var(--section-gap);
+    
+    &__title {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        @include highlighter.default();
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__background {
+        padding-right: 25rem;
+        padding-left: 25rem;
+        position: relative;
+        margin-top: var(--section-gap-inner);
+    }
+
+    &__text {
+        background-color: rgb(255, 255, 255, 30%);
+        max-width: 25rem;
+        width: 100%;
+        padding: 4rem;
+        margin: 0;
+        position: absolute;
+
+        &:nth-child(odd) {
+            background-color: rgba(96, 191, 191, 20%);
+            left: 5rem;
+        }
+
+        &:nth-child(even) {
+            right: 5rem;
+        }
+
+        &--1 {
+            top: 5rem;
+        }
+
+        &--2 {
+            top: 15rem;
+        }
+
+        &--3 {
+            top: 33rem;
+        }
+
+        &--4 {
+            top: 48rem;
+        }
+    }
+
+    &__button {
+        @include button.default();
+    }
+    
+}
+
+.skills {
+    margin-top: 70rem;
+    margin-bottom: 4rem;
+
+    &__title {
+        position: relative;
+        display: inline;
+        @include highlighter.default($right: -1.2rem, $bottom: 0);
+    }
+
+    &__content {
+        padding-top: var(--gap-m);
+        display: flex;
+        gap: var(--gap-xl);
+    }
+}
+
+.skill {
+
+    &__title {
+        margin-bottom: 2rem;
+        display: flex;
+        gap: var(--gap-xs);
+    }
+
+    &__item {
+        font-size: var(--font-size-2);
+        font-weight: 400;
+    }
+}
