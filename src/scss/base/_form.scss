@@ -1,0 +1,20 @@
+@use '../components/buttons' as button;
+
+::placeholder {
+    color: var(--color-dark-800);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-1);
+}
+
+input,
+textarea {
+    background-color: #fff;
+    border: 0;
+    width: 100%;
+    max-width: 100%;
+    
+}
+
+input {
+    padding: 0.5rem 1rem;
+}
