@@ -1,0 +1,34 @@
+.site-footer {
+    margin-top: 4rem;
+    min-height: 300px;
+    background-color: var(--color-accent);
+    color: var(--color-light);
+
+    &__inner {
+        
+    }
+    
+    &__content {
+        padding-top: var(--gap-l);
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__social {
+
+        h6 {
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .social {
+            gap: var(--gap-xs);
+            padding-left: 0;
+        }
+    }
+}
+
+.copyright {
+    margin: 0 auto;
+}

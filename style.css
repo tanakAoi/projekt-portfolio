@@ -195,6 +195,30 @@ body {
   gap: var(--gap-l);
 }
 
+.site-footer {
+  margin-top: 4rem;
+  min-height: 300px;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+}
+.site-footer__content {
+  padding-top: var(--gap-l);
+  display: flex;
+  justify-content: space-between;
+}
+.site-footer__social h6 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.site-footer__social .social {
+  gap: var(--gap-xs);
+  padding-left: 0;
+}
+
+.copyright {
+  margin: 0 auto;
+}
+
 .site-hero {
   min-height: 100vh;
   width: 100%;
