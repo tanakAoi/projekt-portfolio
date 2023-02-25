@@ -3,7 +3,7 @@
 ::placeholder {
     color: var(--color-dark-800);
     font-family: var(--font-sans);
-    font-size: var(--font-size-1);
+    font-size: 1.25rem;
 }
 
 input,
@@ -11,10 +11,12 @@ textarea {
     background-color: #fff;
     border: 0;
     width: 100%;
-    max-width: 100%;
-    
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    resize: none;
 }
 
-input {
-    padding: 0.5rem 1rem;
+form button {
+    @include button.default();
+    width: 30%;
 }
