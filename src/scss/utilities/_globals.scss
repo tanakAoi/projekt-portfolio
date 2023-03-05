@@ -56,5 +56,5 @@
     --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
 
     --page-width: 102rem;
-    --grid-container: [full-start] minmax(3rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(3rem, 1fr) [full-end];
+    --grid-container: [full-start] minmax(5rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(5rem, 1fr) [full-end];
 }
