@@ -45,12 +45,11 @@ a {
     color: var(--color-dark);
     text-decoration: none;
     line-height: 0;
-
-    &:hover {
-        
-    }
-
 }
+
+body.dark a {
+    color: var(--color-light);
+} 
 
 ul {
     list-style: none;
@@ -60,3 +59,4 @@ li {
     line-height: var(--line-height);
     font-weight: 500;
 }
+
