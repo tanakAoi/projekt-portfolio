@@ -5,218 +5,258 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aoi Tanaka</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://use.typekit.net/wcv0wto.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/headerScroll.js" defer></script>
+    <script src="src/js/pageScroll.js" defer></script>
+    <script src="src/js/modeToggle.js" defer></script>
     <script src="src/js/work.js" defer></script>
 </head>
 <body>
-      <div class="container">
+        <div class="container">
 
-        <!-- Header -->
-        <header class="site-header">
-            <div class="site-header__inner">
+            <!-- Header -->
+            <header id="header" class="site-header">
+                <div class="site-header__inner">
 
-                <!-- Header logo -->
-                <a href="" class="site-header__logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30" viewBox="0 0 206.148 30.504">
-                        <path id="logo" d="M21.115,0h6.56L16.892-27.347H11.111L.082,0h6.56L8.733-5.166H19.065ZM10.578-10l3.4-9.184L17.343-10Zm40.057.861a9.825,9.825,0,0,0-2.747-6.806,11.268,11.268,0,0,0-8-2.952A11.268,11.268,0,0,0,31.9-15.949a9.825,9.825,0,0,0-2.747,6.806A9.825,9.825,0,0,0,31.9-2.337,11.268,11.268,0,0,0,39.893.615a11.268,11.268,0,0,0,8-2.952A9.825,9.825,0,0,0,50.635-9.143ZM39.893-13.9a4.511,4.511,0,0,1,3.321,1.312,4.628,4.628,0,0,1,1.353,3.444A4.628,4.628,0,0,1,43.214-5.7a4.482,4.482,0,0,1-3.28,1.312A4.547,4.547,0,0,1,36.572-5.7a4.64,4.64,0,0,1-1.353-3.444,4.628,4.628,0,0,1,1.353-3.444A4.511,4.511,0,0,1,39.893-13.9Zm14.842-4.387V0h5.9V-18.286Zm-.492-7.79a3.413,3.413,0,0,0,3.444,3.444,3.413,3.413,0,0,0,3.444-3.444,3.413,3.413,0,0,0-3.444-3.444A3.413,3.413,0,0,0,54.243-26.076ZM91.43-22.017v-5.33h-18.2v5.33h5.945V0h6.314V-22.017Zm14.227,5.781a6.859,6.859,0,0,0-5.74-2.665,8.816,8.816,0,0,0-6.355,2.5,10.413,10.413,0,0,0-2.829,7.38A9.676,9.676,0,0,0,93.4-2.173,8.666,8.666,0,0,0,100.245.615a6.093,6.093,0,0,0,5.412-2.829V0h5.9V-18.286h-5.9Zm-4.264,2.419a4.941,4.941,0,0,1,3.28,1.271,4.637,4.637,0,0,1,1.353,3.362,4.645,4.645,0,0,1-1.435,3.444,4.373,4.373,0,0,1-3.075,1.271A4.849,4.849,0,0,1,98.031-5.9a4.716,4.716,0,0,1-1.23-3.28,4.569,4.569,0,0,1,1.353-3.321A4.654,4.654,0,0,1,101.393-13.817ZM116.153,0h5.9V-9.389a4.678,4.678,0,0,1,1.148-3.485,3.209,3.209,0,0,1,2.46-.984,3.1,3.1,0,0,1,2.255.82c.943.943.984,2.46.984,3.649V0h5.9V-11.562a7.162,7.162,0,0,0-1.845-5.371,7.205,7.205,0,0,0-5.248-1.845,6.677,6.677,0,0,0-5.658,2.665v-2.173h-5.9Zm37.269-16.236a6.859,6.859,0,0,0-5.74-2.665,8.816,8.816,0,0,0-6.355,2.5A10.413,10.413,0,0,0,138.5-9.02a9.676,9.676,0,0,0,2.665,6.847A8.666,8.666,0,0,0,148.01.615a6.093,6.093,0,0,0,5.412-2.829V0h5.9V-18.286h-5.9Zm-4.264,2.419a4.941,4.941,0,0,1,3.28,1.271,4.637,4.637,0,0,1,1.353,3.362,4.645,4.645,0,0,1-1.435,3.444,4.373,4.373,0,0,1-3.075,1.271A4.849,4.849,0,0,1,145.8-5.9a4.716,4.716,0,0,1-1.23-3.28,4.569,4.569,0,0,1,1.353-3.321A4.654,4.654,0,0,1,149.158-13.817Zm14.924-16.072V0h5.9V-7.872L177.038,0h7.954l-9.307-10,8.692-8.282h-7.749l-6.642,6.724V-29.889Zm36.244,13.653a6.859,6.859,0,0,0-5.74-2.665,8.816,8.816,0,0,0-6.355,2.5A10.413,10.413,0,0,0,185.4-9.02a9.676,9.676,0,0,0,2.665,6.847A8.666,8.666,0,0,0,194.914.615a6.093,6.093,0,0,0,5.412-2.829V0h5.9V-18.286h-5.9Zm-4.264,2.419a4.941,4.941,0,0,1,3.28,1.271A4.637,4.637,0,0,1,200.7-9.184,4.645,4.645,0,0,1,199.26-5.74a4.373,4.373,0,0,1-3.075,1.271A4.849,4.849,0,0,1,192.7-5.9a4.716,4.716,0,0,1-1.23-3.28,4.569,4.569,0,0,1,1.353-3.321A4.654,4.654,0,0,1,196.062-13.817Z" transform="translate(-0.082 29.889)" fill="#222"/>
-                    </svg>
-                </a>
+                    <!-- Header logo -->
+                    <a href="" class="site-header__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30" viewBox="0 0 206.148 30.504">
+                            <path id="logo" d="M21.115,0h6.56L16.892-27.347H11.111L.082,0h6.56L8.733-5.166H19.065ZM10.578-10l3.4-9.184L17.343-10Zm40.057.861a9.825,9.825,0,0,0-2.747-6.806,11.268,11.268,0,0,0-8-2.952A11.268,11.268,0,0,0,31.9-15.949a9.825,9.825,0,0,0-2.747,6.806A9.825,9.825,0,0,0,31.9-2.337,11.268,11.268,0,0,0,39.893.615a11.268,11.268,0,0,0,8-2.952A9.825,9.825,0,0,0,50.635-9.143ZM39.893-13.9a4.511,4.511,0,0,1,3.321,1.312,4.628,4.628,0,0,1,1.353,3.444A4.628,4.628,0,0,1,43.214-5.7a4.482,4.482,0,0,1-3.28,1.312A4.547,4.547,0,0,1,36.572-5.7a4.64,4.64,0,0,1-1.353-3.444,4.628,4.628,0,0,1,1.353-3.444A4.511,4.511,0,0,1,39.893-13.9Zm14.842-4.387V0h5.9V-18.286Zm-.492-7.79a3.413,3.413,0,0,0,3.444,3.444,3.413,3.413,0,0,0,3.444-3.444,3.413,3.413,0,0,0-3.444-3.444A3.413,3.413,0,0,0,54.243-26.076ZM91.43-22.017v-5.33h-18.2v5.33h5.945V0h6.314V-22.017Zm14.227,5.781a6.859,6.859,0,0,0-5.74-2.665,8.816,8.816,0,0,0-6.355,2.5,10.413,10.413,0,0,0-2.829,7.38A9.676,9.676,0,0,0,93.4-2.173,8.666,8.666,0,0,0,100.245.615a6.093,6.093,0,0,0,5.412-2.829V0h5.9V-18.286h-5.9Zm-4.264,2.419a4.941,4.941,0,0,1,3.28,1.271,4.637,4.637,0,0,1,1.353,3.362,4.645,4.645,0,0,1-1.435,3.444,4.373,4.373,0,0,1-3.075,1.271A4.849,4.849,0,0,1,98.031-5.9a4.716,4.716,0,0,1-1.23-3.28,4.569,4.569,0,0,1,1.353-3.321A4.654,4.654,0,0,1,101.393-13.817ZM116.153,0h5.9V-9.389a4.678,4.678,0,0,1,1.148-3.485,3.209,3.209,0,0,1,2.46-.984,3.1,3.1,0,0,1,2.255.82c.943.943.984,2.46.984,3.649V0h5.9V-11.562a7.162,7.162,0,0,0-1.845-5.371,7.205,7.205,0,0,0-5.248-1.845,6.677,6.677,0,0,0-5.658,2.665v-2.173h-5.9Zm37.269-16.236a6.859,6.859,0,0,0-5.74-2.665,8.816,8.816,0,0,0-6.355,2.5A10.413,10.413,0,0,0,138.5-9.02a9.676,9.676,0,0,0,2.665,6.847A8.666,8.666,0,0,0,148.01.615a6.093,6.093,0,0,0,5.412-2.829V0h5.9V-18.286h-5.9Zm-4.264,2.419a4.941,4.941,0,0,1,3.28,1.271,4.637,4.637,0,0,1,1.353,3.362,4.645,4.645,0,0,1-1.435,3.444,4.373,4.373,0,0,1-3.075,1.271A4.849,4.849,0,0,1,145.8-5.9a4.716,4.716,0,0,1-1.23-3.28,4.569,4.569,0,0,1,1.353-3.321A4.654,4.654,0,0,1,149.158-13.817Zm14.924-16.072V0h5.9V-7.872L177.038,0h7.954l-9.307-10,8.692-8.282h-7.749l-6.642,6.724V-29.889Zm36.244,13.653a6.859,6.859,0,0,0-5.74-2.665,8.816,8.816,0,0,0-6.355,2.5A10.413,10.413,0,0,0,185.4-9.02a9.676,9.676,0,0,0,2.665,6.847A8.666,8.666,0,0,0,194.914.615a6.093,6.093,0,0,0,5.412-2.829V0h5.9V-18.286h-5.9Zm-4.264,2.419a4.941,4.941,0,0,1,3.28,1.271A4.637,4.637,0,0,1,200.7-9.184,4.645,4.645,0,0,1,199.26-5.74a4.373,4.373,0,0,1-3.075,1.271A4.849,4.849,0,0,1,192.7-5.9a4.716,4.716,0,0,1-1.23-3.28,4.569,4.569,0,0,1,1.353-3.321A4.654,4.654,0,0,1,196.062-13.817Z" transform="translate(-0.082 29.889)" fill="#222"/>
+                        </svg>
+                    </a>
 
-                <!-- Header menu -->
-                <ul class="site-header__menu">
-                    <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
-                    <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
-                    <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
-                </ul>
+                    <!-- Header menu -->
+                    <ul class="site-header__menu">
+                        <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                    </ul>
 
-                <!-- Header toggle mode -->
-                <div class="site-header__mode">
-                    <svg id="Icon_feather-sun" data-name="Icon feather-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 36">
-                        <path id="Path_11" data-name="Path 11" d="M25.5,18A7.5,7.5,0,1,1,18,10.5,7.5,7.5,0,0,1,25.5,18Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Path_12" data-name="Path 12" d="M18,1.5v3" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Path_13" data-name="Path 13" d="M18,31.5v3" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Path_14" data-name="Path 14" d="M6.33,6.33,8.46,8.46" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Path_15" data-name="Path 15" d="M27.54,27.54l2.13,2.13" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Path_16" data-name="Path 16" d="M1.5,18h3" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Path_17" data-name="Path 17" d="M31.5,18h3" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Path_18" data-name="Path 18" d="M6.33,29.67l2.13-2.13" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Path_19" data-name="Path 19" d="M27.54,8.46l2.13-2.13" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                    </svg>
-                    <button class="toggle-mode"></button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 29.944 29.944">
-                        <path id="Icon_feather-moon" data-name="Icon feather-moon" d="M31.5,19.185A13.5,13.5,0,1,1,16.815,4.5,10.5,10.5,0,0,0,31.5,19.185Z" transform="translate(-3.056 -3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                    </svg>
-                </div>
-                   
-            </div>
-        </header>
-
-        <!-- Hero -->
-        <section class="site-hero">
-            <div class="site-hero__inner">
-                <h1 class="site-hero__text">
-                    Hello. My name is<br>
-                    <span class="site-hero__text--highlightened">Aoi Tanaka.</span>
-                </h1>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="site-about">
-            <div class="site-about__inner">
-
-                <h2 class="site-about__title">About me</h2>
-                <div class="site-about__content">
-
-                    <!-- About background -->
-                    <div class="site-about__background">
-                        <p class="site-about__text site-about__text--1">I came from Japan. Now I'm living in Falun, Sweden.</p>
-                        <p class="site-about__text site-about__text--2">Earlier I was a student at an university in Osaka, Japan and finished bachelor & master's degree in Swedish history.  </p>
-                        <p class="site-about__text site-about__text--3">I've worked as;<br>
-                        kitchen assistant, sales person, teacher in Swedish etc.</p>
-                        <p class="site-about__text site-about__text--4">Now I'm studying web development & web design at Karlskoga folkhögskola.</p>
+                    <!-- Header toggle mode -->
+                    <div class="site-header__mode">
+                        <button class="mode-toggle">
+                            <span class="material-symbols-outlined">
+                                dark_mode
+                            </span> 
+                        </button>
                     </div>
+                    
+                </div>
+            </header>
 
-                    <!-- About skills -->
-                    <div class="skills">
-                        <h4 class="skills__title">Skills</h4>
+            <!-- Hero -->
+            <section id="hero" class="site-hero">
+                <div class="site-hero__inner">
+                    <h1 class="site-hero__text">
+                        Hello. My name is<br>
+                        <span class="site-hero__text--highlightened">Aoi Tanaka.</span>
+                    </h1>
+                </div>
+            </section>
 
-                        <div class="skills__content">
-                            <div class="skill__content">
-                                <div class="skill__title">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 67.637 49.449">
-                                        <path id="laptop-code-solid" d="M6.764,39.064A6.925,6.925,0,0,1,13.527,32H54.109a6.925,6.925,0,0,1,6.764,7.064V67.321H54.109V39.064H13.527V67.321H6.764ZM0,72.972a2.076,2.076,0,0,1,2.029-2.119H65.608a2.076,2.076,0,0,1,2.029,2.119,8.3,8.3,0,0,1-8.116,8.477H8.116A8.3,8.3,0,0,1,0,72.972ZM29.7,51.537l-3.276,3.422L29.7,58.38a2.721,2.721,0,0,1,0,3.742,2.46,2.46,0,0,1-3.583,0l-5.073-5.3a2.721,2.721,0,0,1,0-3.742l5.073-5.3a2.451,2.451,0,0,1,3.583,0,2.732,2.732,0,0,1,0,3.742Zm11.836-3.753,5.073,5.3a2.721,2.721,0,0,1,0,3.742l-5.073,5.3a2.451,2.451,0,0,1-3.583,0,2.732,2.732,0,0,1,0-3.742l3.276-3.422-3.276-3.422a2.721,2.721,0,0,1,0-3.742,2.46,2.46,0,0,1,3.583,0Z" transform="translate(0 -32)" fill="#222"/>
-                                    </svg>                                
-                                    <h5>Web development</h5>
+            <!-- About -->
+            <section id="about" class="site-about">
+                <div class="site-about__inner">
+
+                    <h2 class="site-about__title">About me</h2>
+                    <div class="site-about__content">
+
+                        <!-- About background -->
+                        <div class="site-about__background">
+                            <p class="site-about__text site-about__text--1">I came from Japan. Now I'm living in Falun, Sweden.</p>
+                            <p class="site-about__text site-about__text--2">Earlier I was a student at an university in Osaka, Japan and finished bachelor & master's degree in Swedish history.  </p>
+                            <p class="site-about__text site-about__text--3">I've worked as;<br>
+                            kitchen assistant, sales person, teacher in Swedish etc.</p>
+                            <p class="site-about__text site-about__text--4">Now I'm studying web development & web design at Karlskoga folkhögskola.</p>
+                        </div>
+
+                        <!-- About skills -->
+                        <div class="skills">
+                            <h4 class="skills__title">Skills</h4>
+
+                            <div class="skills__content">
+                                <div class="skill__content">
+                                    <div class="skill__title">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 67.637 49.449">
+                                            <path id="laptop-code-solid" d="M6.764,39.064A6.925,6.925,0,0,1,13.527,32H54.109a6.925,6.925,0,0,1,6.764,7.064V67.321H54.109V39.064H13.527V67.321H6.764ZM0,72.972a2.076,2.076,0,0,1,2.029-2.119H65.608a2.076,2.076,0,0,1,2.029,2.119,8.3,8.3,0,0,1-8.116,8.477H8.116A8.3,8.3,0,0,1,0,72.972ZM29.7,51.537l-3.276,3.422L29.7,58.38a2.721,2.721,0,0,1,0,3.742,2.46,2.46,0,0,1-3.583,0l-5.073-5.3a2.721,2.721,0,0,1,0-3.742l5.073-5.3a2.451,2.451,0,0,1,3.583,0,2.732,2.732,0,0,1,0,3.742Zm11.836-3.753,5.073,5.3a2.721,2.721,0,0,1,0,3.742l-5.073,5.3a2.451,2.451,0,0,1-3.583,0,2.732,2.732,0,0,1,0-3.742l3.276-3.422-3.276-3.422a2.721,2.721,0,0,1,0-3.742,2.46,2.46,0,0,1,3.583,0Z" transform="translate(0 -32)" fill="#222"/>
+                                        </svg>                                
+                                        <h5>Web development</h5>
+                                    </div>
+                                    <ul class="skill__list">
+                                        <li class="skill__item">HTML</li>
+                                        <li class="skill__item">CSS (Scss/sass)</li>
+                                        <li class="skill__item">Git</li>
+                                        <li class="skill__item">GitHub</li>
+                                        <li class="skill__item">JavaScript</li>
+                                    </ul>
                                 </div>
-                                <ul class="skill__list">
-                                    <li class="skill__item">HTML</li>
-                                    <li class="skill__item">CSS (Scss/sass)</li>
-                                    <li class="skill__item">Git</li>
-                                    <li class="skill__item">GitHub</li>
-                                    <li class="skill__item">JavaScript</li>
-                                </ul>
-                            </div>
-                            <div class="skill__content">
-                                <div class="skill__title">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 55.748 58.225">
-                                        <path id="palette-solid" d="M55.748,29.112v.307C55.7,33.57,52.09,36.39,48.115,36.39H37.456a5.348,5.348,0,0,0-5.226,5.459,6.356,6.356,0,0,0,.109,1.126,18.208,18.208,0,0,0,1.176,3.4,12.492,12.492,0,0,1,1.317,4.776c0,3.616-2.352,6.9-5.814,7.051-.381.011-.762.023-1.154.023C12.478,58.225,0,45.192,0,29.112S12.478,0,27.874,0,55.748,13.032,55.748,29.112ZM13.937,32.751a3.56,3.56,0,0,0-3.484-3.639,3.642,3.642,0,0,0,0,7.278A3.56,3.56,0,0,0,13.937,32.751Zm0-10.917a3.642,3.642,0,0,0,0-7.278,3.642,3.642,0,0,0,0,7.278ZM31.358,10.917a3.488,3.488,0,1,0-6.969,0,3.488,3.488,0,1,0,6.969,0ZM41.811,21.834A3.642,3.642,0,1,0,38.327,18.2,3.56,3.56,0,0,0,41.811,21.834Z" fill="#222"/>
-                                    </svg>                                  
-                                    <h5>Web design</h5>
+                                <div class="skill__content">
+                                    <div class="skill__title">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 55.748 58.225">
+                                            <path id="palette-solid" d="M55.748,29.112v.307C55.7,33.57,52.09,36.39,48.115,36.39H37.456a5.348,5.348,0,0,0-5.226,5.459,6.356,6.356,0,0,0,.109,1.126,18.208,18.208,0,0,0,1.176,3.4,12.492,12.492,0,0,1,1.317,4.776c0,3.616-2.352,6.9-5.814,7.051-.381.011-.762.023-1.154.023C12.478,58.225,0,45.192,0,29.112S12.478,0,27.874,0,55.748,13.032,55.748,29.112ZM13.937,32.751a3.56,3.56,0,0,0-3.484-3.639,3.642,3.642,0,0,0,0,7.278A3.56,3.56,0,0,0,13.937,32.751Zm0-10.917a3.642,3.642,0,0,0,0-7.278,3.642,3.642,0,0,0,0,7.278ZM31.358,10.917a3.488,3.488,0,1,0-6.969,0,3.488,3.488,0,1,0,6.969,0ZM41.811,21.834A3.642,3.642,0,1,0,38.327,18.2,3.56,3.56,0,0,0,41.811,21.834Z" fill="#222"/>
+                                        </svg>                                  
+                                        <h5>Web design</h5>
+                                    </div>
+                                    <ul class="skill__list">
+                                        <li class="skill__item">Adobe XD</li>
+                                        <li class="skill__item">Adobe Illustrator</li>
+                                        <li class="skill__item">Adobe Photoshop</li>
+                                    </ul>
                                 </div>
-                                <ul class="skill__list">
-                                    <li class="skill__item">Adobe XD</li>
-                                    <li class="skill__item">Adobe Illustrator</li>
-                                    <li class="skill__item">Adobe Photoshop</li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Contact button -->
-                    <button class="site-about__button">Contact</button>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Work -->
-        <section id="work" class="site-work">
-            <div class="site-work__inner">
-                <h2 class="site-work__title">Previous work</h2>
-
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <a href=""><img src="assets/images/work1.png" alt="Travel World"></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href=""><img src="assets/images/work2.png" alt="Beartours"></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href=""><img src="assets/images/work3.png" alt="Bearlissimo"></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href=""><img src="assets/images/work4.png" alt="Rose Apothecary"></a>
-                    </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="site-contact">
-            <div class="site-contact__inner">
-                <h2 class="site-contact__title">Contact</h2>
-                <div class="site-contact__contents">
-
-                    <!-- Contact text & social -->
-                    <div class="site-contact__content">
-                        <p class="site-contact__text">Feel free to send a message directly, or choose your favorite below to get in touch with me :)</p>
-                        <ul class="social">
-                            <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-gmail.svg" alt=""></a></li>
-                            <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-twitter.svg" alt=""></a></li>
-                            <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-messenger.svg" alt=""></a></li>
-                            <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-instagram.svg" alt=""></a></li>
-                            <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-linkedin.svg" alt=""></a></li>
-                            <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-github.svg" alt=""></a></li>
-                        </ul>
-                    </div>
-    
-                    <!-- Contact form -->
-                    <div class="site-contact__content">
-                        <form class="site-contact__form" action="">
-                            <input type="text" name="name" placeholder="your name*" required>
-                            <input type="email" name="email" placeholder="your e-mail address*" required>
-                            <input type="text" name="title" placeholder="title">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Please write your message here*"></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
+                        <!-- Contact button -->
+                        <button class="site-about__button"><a href="#contact">Contact</a></button>
                     </div>
 
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="site-footer__inner">
-                <div class="site-footer__content">
-                    <div class="site-footer__text">
-                        <h5>Aoi Tanaka</h5>
-                        <p>
-                            Front-end development & Web design.<br>
-                            Based in Falun, Sweden.
-                        </p>
+            <!-- Work -->
+            <section id="work" class="site-work">
+                <div class="site-work__inner">
+                    <h2 class="site-work__title">Previous work</h2>
+
+                    <!-- Slider main container -->
+                    <div class="swiper site-work__content">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><a href="">
+                                <div class="swiper-slide__overlay"></div>
+                                <div class="swiper-slide__text">
+                                    <h3>Travel World</h3>
+                                    <p>- Travel blog -</p>
+                                </div>
+                                <img class="swiper-slide__image"src="assets/images/work1.png" alt="Travel World">
+                            </a></div>
+                            <div class="swiper-slide"><a href="">
+                                <div class="swiper-slide__overlay"></div>
+                                <div class="swiper-slide__text swiper-slide__text--right">
+                                    <h3>Beartours</h3>
+                                    <p>- Travel agency website -</p>
+                                </div>
+                                <img class="swiper-slide__image"src="assets/images/work2.png" alt="Beartours">
+                            </a></div>
+                            <div class="swiper-slide"><a href="">
+                                <div class="swiper-slide__overlay"></div>
+                                <div class="swiper-slide__text">
+                                    <h3>Bearlissimo</h3>
+                                    <p>- Restaurant website -</p>
+                                </div>
+                                <img class="swiper-slide__image"src="assets/images/work3.png" alt="Bearlissimo">
+                            </a></div>
+                            <div class="swiper-slide"><a href="">
+                                <div class="swiper-slide__overlay"></div>
+                                <div class="swiper-slide__text">
+                                    <h3>Rose Apothecary</h3>
+                                    <p>- Fictional website -</p>
+                                </div>
+                                <img class="swiper-slide__image"src="assets/images/work4.png" alt="Rose Apothecary">
+                            </a></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                    <div class="site-footer__social">
-                        <h6>Find me!</h6>
-                        <ul class="social">
-                            <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.149 29.36"><path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M32.434,11.073c.023.321.023.642.023.963,0,9.794-7.455,21.08-21.08,21.08A20.937,20.937,0,0,1,0,29.79a15.326,15.326,0,0,0,1.789.092,14.838,14.838,0,0,0,9.2-3.165A7.422,7.422,0,0,1,4.06,21.579a9.343,9.343,0,0,0,1.4.115,7.836,7.836,0,0,0,1.95-.252A7.41,7.41,0,0,1,1.468,14.17v-.092a7.461,7.461,0,0,0,3.349.94A7.42,7.42,0,0,1,2.523,5.11,21.059,21.059,0,0,0,17.8,12.863a8.364,8.364,0,0,1-.184-1.7A7.416,7.416,0,0,1,30.438,6.1a14.587,14.587,0,0,0,4.7-1.789A7.389,7.389,0,0,1,31.883,8.39a14.852,14.852,0,0,0,4.266-1.147,15.926,15.926,0,0,1-3.716,3.831Z" transform="translate(0 -3.756)" fill="#f2f2f2"/></svg></a></li>
-                            <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 38.75 38.516"><path id="Icon_awesome-facebook" data-name="Icon awesome-facebook" d="M39.375,20a19.375,19.375,0,1,0-22.4,19.141V25.6H12.051V20h4.922V15.731c0-4.855,2.891-7.537,7.318-7.537a29.818,29.818,0,0,1,4.337.378v4.766H26.184c-2.406,0-3.157,1.494-3.157,3.026V20H28.4l-.859,5.6H23.027v13.54A19.382,19.382,0,0,0,39.375,20Z" transform="translate(-0.625 -0.625)" fill="#f2f2f2"/></svg></a></li>
-                            <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.164 36.156"><path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M18.08,11.294a9.27,9.27,0,1,0,9.27,9.27A9.255,9.255,0,0,0,18.08,11.294Zm0,15.3a6.027,6.027,0,1,1,6.027-6.027A6.038,6.038,0,0,1,18.08,26.591ZM29.891,10.915a2.162,2.162,0,1,1-2.162-2.162A2.157,2.157,0,0,1,29.891,10.915Zm6.14,2.194c-.137-2.9-.8-5.462-2.921-7.576s-4.679-2.775-7.576-2.921c-2.985-.169-11.932-.169-14.917,0-2.888.137-5.454.8-7.576,2.912S.266,10.205.121,13.1c-.169,2.985-.169,11.932,0,14.917.137,2.9.8,5.462,2.921,7.576s4.679,2.775,7.576,2.921c2.985.169,11.932.169,14.917,0,2.9-.137,5.462-.8,7.576-2.921s2.775-4.679,2.921-7.576C36.2,25.034,36.2,16.095,36.031,13.11ZM32.174,31.222a6.1,6.1,0,0,1-3.437,3.437c-2.38.944-8.027.726-10.658.726s-8.286.21-10.658-.726a6.1,6.1,0,0,1-3.437-3.437c-.944-2.38-.726-8.027-.726-10.658s-.21-8.286.726-10.658A6.1,6.1,0,0,1,7.423,6.47c2.38-.944,8.027-.726,10.658-.726s8.286-.21,10.658.726a6.1,6.1,0,0,1,3.437,3.437c.944,2.38.726,8.027.726,10.658S33.118,28.85,32.174,31.222Z" transform="translate(0.006 -2.486)" fill="#f2f2f2"/></svg></a></li>
-                            <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.149 36.149"><path id="Icon_awesome-linkedin" data-name="Icon awesome-linkedin" d="M33.567,2.5H2.574A2.593,2.593,0,0,0,0,5.106V36.043a2.593,2.593,0,0,0,2.574,2.606H33.567a2.6,2.6,0,0,0,2.582-2.606V5.106A2.6,2.6,0,0,0,33.567,2.5ZM10.925,33.485H5.568V16.234h5.366V33.485ZM8.247,13.877a3.107,3.107,0,1,1,3.107-3.107A3.108,3.108,0,0,1,8.247,13.877ZM31.009,33.485H25.651V25.093c0-2-.04-4.575-2.784-4.575-2.792,0-3.22,2.179-3.22,4.43v8.537H14.29V16.234h5.14V18.59H19.5a5.643,5.643,0,0,1,5.075-2.784c5.422,0,6.431,3.575,6.431,8.222Z" transform="translate(0 -2.5)" fill="#f2f2f2"/></svg></a></li>
-                            <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.692 35.775"><path id="Icon_awesome-github" data-name="Icon awesome-github" d="M12.272,29.431c0,.148-.17.266-.385.266-.244.022-.414-.1-.414-.266,0-.148.17-.266.385-.266C12.08,29.142,12.272,29.261,12.272,29.431Zm-2.3-.333c-.052.148.1.318.318.362a.347.347,0,0,0,.459-.148c.044-.148-.1-.318-.318-.385A.38.38,0,0,0,9.972,29.1Zm3.27-.126c-.215.052-.362.192-.34.362.022.148.215.244.436.192s.362-.192.34-.34S13.456,28.95,13.242,28.972ZM18.109.625A17.738,17.738,0,0,0,0,18.675,18.546,18.546,0,0,0,12.539,36.37c.947.17,1.28-.414,1.28-.9,0-.459-.022-2.989-.022-4.542,0,0-5.178,1.11-6.266-2.2,0,0-.843-2.153-2.057-2.707,0,0-1.694-1.161.118-1.139A3.9,3.9,0,0,1,8.448,26.79a3.91,3.91,0,0,0,5.393,1.546,4.111,4.111,0,0,1,1.184-2.493c-4.135-.459-8.307-1.058-8.307-8.174a5.606,5.606,0,0,1,1.746-4.357,6.989,6.989,0,0,1,.192-5.023c1.546-.481,5.1,2,5.1,2a17.476,17.476,0,0,1,9.291,0s3.558-2.486,5.1-2a6.986,6.986,0,0,1,.192,5.023,5.75,5.75,0,0,1,1.909,4.357c0,7.139-4.357,7.708-8.492,8.174a4.375,4.375,0,0,1,1.258,3.432c0,2.493-.022,5.578-.022,6.184,0,.481.34,1.065,1.28.9a18.375,18.375,0,0,0,12.413-17.68C36.692,8.415,28.369.625,18.109.625ZM7.19,26.139c-.1.074-.074.244.052.385.118.118.289.17.385.074.1-.074.074-.244-.052-.385C7.457,26.095,7.287,26.043,7.19,26.139Zm-.8-.6c-.052.1.022.215.17.289a.22.22,0,0,0,.318-.052c.052-.1-.022-.215-.17-.289C6.562,25.444,6.443,25.466,6.391,25.54Zm2.4,2.634c-.118.1-.074.318.1.459.17.17.385.192.481.074.1-.1.052-.318-.1-.459C9.106,28.077,8.884,28.055,8.788,28.173Zm-.843-1.087c-.118.074-.118.266,0,.436s.318.244.414.17a.337.337,0,0,0,0-.459C8.256,27.064,8.063,26.99,7.945,27.086Z" transform="translate(0 -0.625)" fill="#f2f2f2"/></svg></a></li>
-                            <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40.469 40.469"><path id="Icon_awesome-dribbble" data-name="Icon awesome-dribbble" d="M20.859.625A20.234,20.234,0,1,0,41.094,20.859,20.257,20.257,0,0,0,20.859.625ZM34.238,9.956a17.2,17.2,0,0,1,3.9,10.766,40.39,40.39,0,0,0-12.035-.556c-.469-1.146-.912-2.153-1.519-3.4,6.39-2.609,9.286-6.322,9.651-6.815Zm-1.921-2C32.005,8.4,29.4,11.9,23.258,14.2A92.254,92.254,0,0,0,16.809,4.083,17.239,17.239,0,0,1,32.316,7.957Zm-18.8-2.713a110.278,110.278,0,0,1,6.408,10A64.466,64.466,0,0,1,3.941,17.346,17.346,17.346,0,0,1,13.511,5.245ZM3.576,20.886c0-.177,0-.353.009-.528A63.754,63.754,0,0,0,21.348,17.9c.495.968.967,1.951,1.4,2.933A26.771,26.771,0,0,0,8.019,32.442,17.214,17.214,0,0,1,3.576,20.886ZM10.251,34.52c1.805-3.691,6.7-8.455,13.673-10.832A71.842,71.842,0,0,1,27.61,36.8a17.248,17.248,0,0,1-17.36-2.275Zm20.265.693A74.6,74.6,0,0,0,27.158,22.89a25.368,25.368,0,0,1,10.766.739A17.313,17.313,0,0,1,30.516,35.213Z" transform="translate(-0.625 -0.625)" fill="#f2f2f2"/></svg></a></li>
-                        </ul>
+
+                    <!-- Work content (responsive) -->
+                    <div class="site-work__content--responsive">
+                        <div class="work-responsive"><a href="">
+                            <img class="work-responsive__image"src="assets/images/work1.png" alt="Travel World">
+                        </a></div>
+                        <div class="work-responsive"><a href="">
+                            <img class="work-responsive__image"src="assets/images/work2.png" alt="Beartours">
+                        </a></div>
+                        <div class="work-responsive"><a href="">
+                            <img class="work-responsive__image"src="assets/images/work3.png" alt="Bearlissimo">
+                        </a></div>
+                        <div class="work-responsive"><a href="">
+                            <img class="work-responsive__image"src="assets/images/work4.png" alt="Rose Apothecary">
+                        </a></div>
+                    </div>
+                    
+
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="site-contact">
+                <div class="site-contact__inner">
+                    <h2 class="site-contact__title">Contact</h2>
+                    <div class="site-contact__contents">
+
+                        <!-- Contact text & social -->
+                        <div class="site-contact__content">
+                            <p class="site-contact__text">Feel free to send a message directly, or choose your favorite below to get in touch with me :)</p>
+                            <ul class="social">
+                                <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-gmail.svg" alt=""></a></li>
+                                <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-twitter.svg" alt=""></a></li>
+                                <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-messenger.svg" alt=""></a></li>
+                                <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-instagram.svg" alt=""></a></li>
+                                <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-linkedin.svg" alt=""></a></li>
+                                <li class="social__item"><a href="" class="social__link"><img src="assets/icons/icon-github.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+        
+                        <!-- Contact form -->
+                        <div class="site-contact__content">
+                            <form class="site-contact__form" action="">
+                                <input type="text" name="name" placeholder="your name*" required>
+                                <input type="email" name="email" placeholder="your e-mail address*" required>
+                                <input type="text" name="title" placeholder="title">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Please write your message here*"></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+
                     </div>
                 </div>
-                <span class="copyright">&copy; Copyright 2023, Aoi Tanaka. All rights reserved.</span>
-            </div>
-        </footer>
+            </section>
 
-      </div>
+            <!-- Footer -->
+            <footer class="site-footer">
+                <div class="site-footer__inner">
+                    <div class="site-footer__content">
+                        <div class="site-footer__text">
+                            <h4>Aoi Tanaka</h4>
+                            <p>
+                                Front-end development & Web design.<br>
+                                Based in Falun, Sweden.
+                            </p>
+                        </div>
+                        <div class="site-footer__social">
+                            <h5>Find me!</h5>
+                            <ul class="social">
+                                <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 36.149 29.36"><path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M32.434,11.073c.023.321.023.642.023.963,0,9.794-7.455,21.08-21.08,21.08A20.937,20.937,0,0,1,0,29.79a15.326,15.326,0,0,0,1.789.092,14.838,14.838,0,0,0,9.2-3.165A7.422,7.422,0,0,1,4.06,21.579a9.343,9.343,0,0,0,1.4.115,7.836,7.836,0,0,0,1.95-.252A7.41,7.41,0,0,1,1.468,14.17v-.092a7.461,7.461,0,0,0,3.349.94A7.42,7.42,0,0,1,2.523,5.11,21.059,21.059,0,0,0,17.8,12.863a8.364,8.364,0,0,1-.184-1.7A7.416,7.416,0,0,1,30.438,6.1a14.587,14.587,0,0,0,4.7-1.789A7.389,7.389,0,0,1,31.883,8.39a14.852,14.852,0,0,0,4.266-1.147,15.926,15.926,0,0,1-3.716,3.831Z" transform="translate(0 -3.756)" fill="#f2f2f2"/></svg></a></li>
+                                <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 38.75 38.516"><path id="Icon_awesome-facebook" data-name="Icon awesome-facebook" d="M39.375,20a19.375,19.375,0,1,0-22.4,19.141V25.6H12.051V20h4.922V15.731c0-4.855,2.891-7.537,7.318-7.537a29.818,29.818,0,0,1,4.337.378v4.766H26.184c-2.406,0-3.157,1.494-3.157,3.026V20H28.4l-.859,5.6H23.027v13.54A19.382,19.382,0,0,0,39.375,20Z" transform="translate(-0.625 -0.625)" fill="#f2f2f2"/></svg></a></li>
+                                <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 36.164 36.156"><path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M18.08,11.294a9.27,9.27,0,1,0,9.27,9.27A9.255,9.255,0,0,0,18.08,11.294Zm0,15.3a6.027,6.027,0,1,1,6.027-6.027A6.038,6.038,0,0,1,18.08,26.591ZM29.891,10.915a2.162,2.162,0,1,1-2.162-2.162A2.157,2.157,0,0,1,29.891,10.915Zm6.14,2.194c-.137-2.9-.8-5.462-2.921-7.576s-4.679-2.775-7.576-2.921c-2.985-.169-11.932-.169-14.917,0-2.888.137-5.454.8-7.576,2.912S.266,10.205.121,13.1c-.169,2.985-.169,11.932,0,14.917.137,2.9.8,5.462,2.921,7.576s4.679,2.775,7.576,2.921c2.985.169,11.932.169,14.917,0,2.9-.137,5.462-.8,7.576-2.921s2.775-4.679,2.921-7.576C36.2,25.034,36.2,16.095,36.031,13.11ZM32.174,31.222a6.1,6.1,0,0,1-3.437,3.437c-2.38.944-8.027.726-10.658.726s-8.286.21-10.658-.726a6.1,6.1,0,0,1-3.437-3.437c-.944-2.38-.726-8.027-.726-10.658s-.21-8.286.726-10.658A6.1,6.1,0,0,1,7.423,6.47c2.38-.944,8.027-.726,10.658-.726s8.286-.21,10.658.726a6.1,6.1,0,0,1,3.437,3.437c.944,2.38.726,8.027.726,10.658S33.118,28.85,32.174,31.222Z" transform="translate(0.006 -2.486)" fill="#f2f2f2"/></svg></a></li>
+                                <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 36.149 36.149"><path id="Icon_awesome-linkedin" data-name="Icon awesome-linkedin" d="M33.567,2.5H2.574A2.593,2.593,0,0,0,0,5.106V36.043a2.593,2.593,0,0,0,2.574,2.606H33.567a2.6,2.6,0,0,0,2.582-2.606V5.106A2.6,2.6,0,0,0,33.567,2.5ZM10.925,33.485H5.568V16.234h5.366V33.485ZM8.247,13.877a3.107,3.107,0,1,1,3.107-3.107A3.108,3.108,0,0,1,8.247,13.877ZM31.009,33.485H25.651V25.093c0-2-.04-4.575-2.784-4.575-2.792,0-3.22,2.179-3.22,4.43v8.537H14.29V16.234h5.14V18.59H19.5a5.643,5.643,0,0,1,5.075-2.784c5.422,0,6.431,3.575,6.431,8.222Z" transform="translate(0 -2.5)" fill="#f2f2f2"/></svg></a></li>
+                                <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 36.692 35.775"><path id="Icon_awesome-github" data-name="Icon awesome-github" d="M12.272,29.431c0,.148-.17.266-.385.266-.244.022-.414-.1-.414-.266,0-.148.17-.266.385-.266C12.08,29.142,12.272,29.261,12.272,29.431Zm-2.3-.333c-.052.148.1.318.318.362a.347.347,0,0,0,.459-.148c.044-.148-.1-.318-.318-.385A.38.38,0,0,0,9.972,29.1Zm3.27-.126c-.215.052-.362.192-.34.362.022.148.215.244.436.192s.362-.192.34-.34S13.456,28.95,13.242,28.972ZM18.109.625A17.738,17.738,0,0,0,0,18.675,18.546,18.546,0,0,0,12.539,36.37c.947.17,1.28-.414,1.28-.9,0-.459-.022-2.989-.022-4.542,0,0-5.178,1.11-6.266-2.2,0,0-.843-2.153-2.057-2.707,0,0-1.694-1.161.118-1.139A3.9,3.9,0,0,1,8.448,26.79a3.91,3.91,0,0,0,5.393,1.546,4.111,4.111,0,0,1,1.184-2.493c-4.135-.459-8.307-1.058-8.307-8.174a5.606,5.606,0,0,1,1.746-4.357,6.989,6.989,0,0,1,.192-5.023c1.546-.481,5.1,2,5.1,2a17.476,17.476,0,0,1,9.291,0s3.558-2.486,5.1-2a6.986,6.986,0,0,1,.192,5.023,5.75,5.75,0,0,1,1.909,4.357c0,7.139-4.357,7.708-8.492,8.174a4.375,4.375,0,0,1,1.258,3.432c0,2.493-.022,5.578-.022,6.184,0,.481.34,1.065,1.28.9a18.375,18.375,0,0,0,12.413-17.68C36.692,8.415,28.369.625,18.109.625ZM7.19,26.139c-.1.074-.074.244.052.385.118.118.289.17.385.074.1-.074.074-.244-.052-.385C7.457,26.095,7.287,26.043,7.19,26.139Zm-.8-.6c-.052.1.022.215.17.289a.22.22,0,0,0,.318-.052c.052-.1-.022-.215-.17-.289C6.562,25.444,6.443,25.466,6.391,25.54Zm2.4,2.634c-.118.1-.074.318.1.459.17.17.385.192.481.074.1-.1.052-.318-.1-.459C9.106,28.077,8.884,28.055,8.788,28.173Zm-.843-1.087c-.118.074-.118.266,0,.436s.318.244.414.17a.337.337,0,0,0,0-.459C8.256,27.064,8.063,26.99,7.945,27.086Z" transform="translate(0 -0.625)" fill="#f2f2f2"/></svg></a></li>
+                                <li class="social__item"><a href="" class="social__link"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 40.469 40.469"><path id="Icon_awesome-dribbble" data-name="Icon awesome-dribbble" d="M20.859.625A20.234,20.234,0,1,0,41.094,20.859,20.257,20.257,0,0,0,20.859.625ZM34.238,9.956a17.2,17.2,0,0,1,3.9,10.766,40.39,40.39,0,0,0-12.035-.556c-.469-1.146-.912-2.153-1.519-3.4,6.39-2.609,9.286-6.322,9.651-6.815Zm-1.921-2C32.005,8.4,29.4,11.9,23.258,14.2A92.254,92.254,0,0,0,16.809,4.083,17.239,17.239,0,0,1,32.316,7.957Zm-18.8-2.713a110.278,110.278,0,0,1,6.408,10A64.466,64.466,0,0,1,3.941,17.346,17.346,17.346,0,0,1,13.511,5.245ZM3.576,20.886c0-.177,0-.353.009-.528A63.754,63.754,0,0,0,21.348,17.9c.495.968.967,1.951,1.4,2.933A26.771,26.771,0,0,0,8.019,32.442,17.214,17.214,0,0,1,3.576,20.886ZM10.251,34.52c1.805-3.691,6.7-8.455,13.673-10.832A71.842,71.842,0,0,1,27.61,36.8a17.248,17.248,0,0,1-17.36-2.275Zm20.265.693A74.6,74.6,0,0,0,27.158,22.89a25.368,25.368,0,0,1,10.766.739A17.313,17.313,0,0,1,30.516,35.213Z" transform="translate(-0.625 -0.625)" fill="#f2f2f2"/></svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="site-footer__copyright">
+                        &copy; Copyright 2023, Aoi Tanaka. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Top button -->
+            <a class="top-button top-button--visible top-button--footer" href="#top">
+                <span class="material-symbols-outlined">
+                    arrow_upward
+                </span>
+            </a>
+
+        </div>
 </body>
 </html>
