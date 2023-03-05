@@ -16,7 +16,11 @@ textarea {
     resize: none;
 }
 
-form button {
-    @include button.default();
-    width: 30%;
+body.dark {
+
+    input,
+    textarea {
+        background-color: var(--color-light);
+    }
+    
 }
