@@ -1,4 +1,5 @@
 @use '../../components/highlighter';
+@use '../../utilities/responsive';
 
 .site-hero {
     min-height: 100vh;
@@ -11,21 +12,54 @@
     }
 
     &__text {
-        font-size: 8rem;
+        font-size: clamp(4rem, 9vw, 8rem);
         line-height: 1.7;
         text-align: right;
         margin: 0;
         padding: 0;
         position: relative;
 
+        @include responsive.max(43.5rem) {
+            padding: var(--gap-xl) var(--gap-l);
+        }
+
         &--highlightened {
             @include highlighter.default(
-                $height: 3.5rem,
+                $height: 3.3rem,
                 $width: 60%,
-                $bottom: 2rem,
-                $right: -2rem); 
+                $bottom: 1.5rem,
+                $right: -2rem);
+
+            &::after {
+                animation: slideIn 2s;
+
+                @include responsive.max(62.5rem) {
+                    animation: none;
+                    height: 2rem;
+                    bottom: 1.5rem;
+                }
+
+                @include responsive.max(43.5rem) {
+                    width: 30%;
+                    right: 3rem;
+                    bottom: 13rem;
+                }
+            }
+
         }
         
     }
+    
+}
 
+@keyframes slideIn {
+
+    0% {
+        transform: translateX(60rem);
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
 }
