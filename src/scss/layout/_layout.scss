@@ -1,5 +1,22 @@
+@use '../utilities/responsive';
+
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+body.dark {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: 1px solid #222;
+}
+
+.container {
+    position: relative;
 }
 
 .site-header,
@@ -14,11 +31,70 @@ body {
     &__inner {
         grid-column: inner;
     }
+    
+    @include responsive.max(43.5rem) {
+        grid-template-columns: [full-start] minmax(3rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(3rem, 1fr) [full-end];
+    }
 }
 
 .site-hero,
 .site-about,
 .site-work,
 .site-contact {
-    min-height: 100vh; // temp
+    margin-bottom: 4rem;
+}
+
+.site-about,
+.site-work,
+.site-contact {
+    padding-bottom: 4rem;
+
+    @include responsive.max(62.5rem) {
+        padding-bottom: 2rem;
+    }
+
+}
+
+.site-about,
+.site-work {
+    padding-top: 2rem;
+}
+
+.site-contact {
+    padding-top: 5rem;
+    
+    @include responsive.max(43.5rem) {
+        padding-top: 2rem;
+    }
+}
+
+.site-footer {
+    margin-top: var(--section-gap);
+}
+
+.top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: var(--color-dark);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+
+    &--visible {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    &--footer {
+        color: var(--color-light);
+    }
+
+}
+
+body.dark {
+        
+    .top-button {
+        color: var(--color-light);
+    }
 }
