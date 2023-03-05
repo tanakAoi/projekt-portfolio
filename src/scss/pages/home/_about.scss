@@ -1,8 +1,8 @@
 @use '../../components/buttons' as button;
 @use '../../components/highlighter';
+@use '../../utilities/responsive';
 
 .site-about {
-    padding-top: var(--section-gap);
     
     &__title {
         display: inline-block;
@@ -11,6 +11,15 @@
         position: relative;
         @include highlighter.default();
 
+        @include responsive.max(62.5rem) {
+            font-size: var(--font-size-4);
+            @include highlighter.default($height: 1.5rem, $bottom: 0);
+        }
+
+        @include responsive.max(43.5rem) {
+            font-size: var(--font-size-3);
+            @include highlighter.default($height: 1rem, $bottom: 0);
+        }
     }
 
     &__content {
@@ -22,10 +31,16 @@
     }
 
     &__background {
-        padding-right: 25rem;
-        padding-left: 25rem;
+        padding: 0 25rem;
         position: relative;
-        margin-top: var(--section-gap-inner);
+        margin-top: var(--gap-m);
+
+        @include responsive.max(43.5rem) {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-s);
+        }
     }
 
     &__text {
@@ -36,13 +51,26 @@
         margin: 0;
         position: absolute;
 
+        @include responsive.max(43.5rem) {
+            position: relative;
+            padding: 2rem;
+        }
+
         &:nth-child(odd) {
             background-color: rgba(96, 191, 191, 20%);
             left: 5rem;
+
+            @include responsive.max(43.5rem) {
+                left: 0;
+            }
         }
 
         &:nth-child(even) {
             right: 5rem;
+
+            @include responsive.max(43.5rem) {
+                right: 0;
+            }
         }
 
         &--1 {
@@ -60,10 +88,27 @@
         &--4 {
             top: 42rem;
         }
+        
+        @include responsive.max(43.5rem) {
+
+            &--1,
+            &--2,
+            &--3,
+            &--4 {
+                top: 0;
+            }
+       
+        }
+
     }
 
     &__button {
         @include button.default();
+        
+        @include responsive.max(62.5rem) {
+            font-size: var(--font-size-1);
+            width: 8rem;
+        }
     }
     
 }
@@ -72,16 +117,32 @@
     margin-top: 70rem;
     margin-bottom: 4rem;
 
+    @include responsive.max(43.5rem) {
+        margin-top: var(--gap-xl);
+        margin-bottom: 2rem;
+    }
+
     &__title {
         position: relative;
         display: inline;
-        @include highlighter.default($right: -1.2rem, $bottom: 0);
+        @include highlighter.default($height: 1.5rem, $right: -0.5rem, $bottom: -0.2rem);
+        
+        @include responsive.max(43.5rem) {
+            font-size: var(--font-size-3);
+            @include highlighter.default($height: 1rem, $bottom: 0);
+        }
     }
 
     &__content {
         padding-top: var(--gap-m);
         display: flex;
         gap: var(--gap-xl);
+        
+        @include responsive.max(43.5rem) {
+            flex-direction: column;
+            margin-top: var(--gap-s);
+            gap: var(--gap-m);
+        }
     }
 }
 
@@ -96,5 +157,9 @@
     &__item {
         font-size: var(--font-size-2);
         font-weight: 400;
+
+        @include responsive.max(43.5rem) {
+            font-size: var(--font-size-1);
+        }
     }
 }
