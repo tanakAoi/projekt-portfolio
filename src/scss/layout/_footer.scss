@@ -1,34 +1,74 @@
+@use '../utilities/responsive';
+
 .site-footer {
-    margin-top: 4rem;
-    min-height: 300px;
     background-color: var(--color-accent);
     color: var(--color-light);
 
     &__inner {
-        
+        padding: 2rem;
+
+        @include responsive.max(62.5rem) {
+            padding: 0;
+        }
     }
-    
+
     &__content {
         padding-top: var(--gap-l);
         display: flex;
         justify-content: space-between;
+        gap: var(--gap-l);
         
+        @include responsive.max(43.5rem) {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+
+    &__text p {
+        font-size: clamp(var(--font-size-1), 2vw, var(--font-size-2));
     }
 
     &__social {
 
-        h6 {
+        h5 {
             font-weight: 500;
             margin-bottom: 1.5rem;
         }
 
         .social {
-            gap: var(--gap-xs);
+            display: flex;
+            gap: 1.5rem;
             padding-left: 0;
+
+            @include responsive.max(62.5rem) {
+                flex-wrap: wrap;
+            }
+
+            @include responsive.max(43.5rem) {
+                gap: 1.2rem;
+            }
+
+            svg {
+                display: block;
+
+                @include responsive.max(62.5rem) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        
+        }
+
+    }
+
+    &__copyright {
+        font-size: clamp(1rem, 2vw, var(--font-size-1));
+        text-align: center;
+        margin: var(--gap-m) 0;
+        
+        @include responsive.max(43.5rem) {
+            margin-top: var(--gap-xl);
         }
     }
-}
-
-.copyright {
-    margin: 0 auto;
 }
