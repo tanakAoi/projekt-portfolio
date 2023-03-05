@@ -81,6 +81,10 @@ body.dark {
     opacity: 0;
     transition: all 0.3s;
 
+    &__icon {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
     &--visible {
         visibility: visible;
         opacity: 1;
